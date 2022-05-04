@@ -1,13 +1,18 @@
 <template>
   <div>
     <h1>Questa è una prova</h1>
+     <img :src="img" alt="">
   </div>
 </template>
 
 <script>
 export default {
   name: 'AppHeader',
-  
+  data(){
+    return {
+        img: './images/logo.png'
+    }
+  }
 }
 </script>
 
