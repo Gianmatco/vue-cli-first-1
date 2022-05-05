@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    {{titolo}} 
-   
     <app-header />
     <main>
       <app-products />
@@ -26,7 +24,7 @@ export default {
   },
   data(){ 
     return {
-      titolo: 'Mio titolo',
+     
     
     }
   },
@@ -36,6 +34,17 @@ export default {
 }
 </script>
 
-<style >
+<style lang="scss">
+@import "./style/vars";
+@import "./style/generals";
+@import "./style/utilities";
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary;
+}
 </style>
