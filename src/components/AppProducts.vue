@@ -5,7 +5,7 @@
 
         <div class="boxes container">
           
-            <product-card />
+            <product-card v-for="(card, index) in products" :key="index" :detail="card" />
         </div>
     </section>
     

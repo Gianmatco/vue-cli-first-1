@@ -1,11 +1,25 @@
 <template>
-    <div class="prod-card"></div>
+    <div class="prod-card">
+        <img :src="detail.src" :alt="detail.titolo">
+        <h3>{{detail.titolo}}</h3>
+    </div>
 </template>
 
 
 <script>
 export default {
-    name: 'ProductCard'
+    name: 'ProductCard',
+    data(){
+        return {
+
+        }
+    },
+    props: {
+        detail: Object
+        // immagine: String,
+        // titolo: String
+    }
+    //['immagine','titolo']
 }
 </script>
 <style lang="scss" scoped>
